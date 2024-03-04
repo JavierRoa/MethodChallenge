@@ -9,14 +9,14 @@ public class MethodChallenge {
 
     }
     public static int calculateHighScorePosition(int score) {
+        int rango = 4;
         if (score >=1000) {
-            return 1;
+            rango= 1;
         } else if (score>=500 && score<1000) {
-            return 2;
+            rango= 2;
         } else if (score>=100 && score<500) {
-            return 3;
-        } else {
-            return 4;
+            rango= 3;
         }
+        return rango;
     }
 }
